@@ -1,0 +1,25 @@
+<van-search
+  shape="round"
+  background='linear-gradient(to right, #38ef7d, #11998e)'
+  placeholder="请输入搜索关键词"
+  bind:change="onChange">
+  <!-- <view slot="action" bind:tap="onClick">搜索</view> -->
+</van-search>
+<view class="table">
+  <view class="tr">
+    <view class="th ">货架号</view>
+    <view class="th ">名称</view>        
+    <view class="th ">数量</view>
+    <view class="th ">警戒线</view>        
+    <view class="th ">添加人</view>
+  </view>
+  <block wx:for="{{data}}">
+    <view class="tr {{index % 2 ==0 ?'bg-w':'bg-g'}}"  id="{{item._id}}" bindtap="navigateToDetail">
+      <view class="td">{{item.shelf_idx}}</view>
+      <view class="td">{{item.material_name}}</view>
+      <view class="td">{{item.material_count}}</view>
+      <view class="td">{{item.warning_line}}</view>
+      <view class="td">{{item.user_name}}</view>
+    </view>
+  </block>
+</view>

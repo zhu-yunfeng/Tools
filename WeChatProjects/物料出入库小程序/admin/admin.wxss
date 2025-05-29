@@ -1,0 +1,10 @@
+.index-button{
+  margin-right: 50rpx;
+  margin-left: 50rpx;
+  margin-bottom: 60rpx;
+}
+
+.page__hd{
+  padding-top: 20px;
+  margin-left: 15px;
+}

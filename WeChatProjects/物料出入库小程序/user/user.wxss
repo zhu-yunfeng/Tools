@@ -1,0 +1,41 @@
+.table {
+  border: 0px solid darkgray;
+}
+
+.tr {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  border-bottom: 1rpx solid #f7f8fb;
+  background:linear-gradient(to right, #FFE53B, #FF2525);
+}
+
+.th {
+  width: 25%;
+  height: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  color: #fff;
+  font-size: 30rpx;
+  font-weight: bold;
+}
+
+.td {
+  width: 25%;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  font-size: 26rpx;
+  color:black;
+  padding: 0.5rem 0 0.5rem 0;
+}
+
+.bg-w {
+  background: #fffcdc;
+}
+
+.bg-g {
+  background:  #fcefe8;
+}

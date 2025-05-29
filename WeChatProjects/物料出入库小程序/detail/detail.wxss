@@ -1,0 +1,10 @@
+.intro-btn{
+  margin-top: 50rpx;
+  margin-left: 10rpx;
+  margin-right: 10rpx;
+}
+
+.page__hd{
+  padding-top: 20px;
+  margin-left: 15px;
+}

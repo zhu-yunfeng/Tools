@@ -1,0 +1,73 @@
+<van-dialog id="van-dialog" />
+<view class="page__hd">请在下方修改物料信息：</view>
+<van-divider />
+
+<form bindsubmit="changeSubmit">
+  <van-cell-group>
+    <van-field
+      required
+      clearable
+      label="货架编号"
+      name="shelf_idx"
+      placeholder="请填写货架号"
+      value = "{{data.shelf_idx}}"
+    />
+
+    <van-field
+      label="物料名"
+      name="material_name"
+      placeholder="请填写物料名称"
+      value = "{{data.material_name}}"
+      required
+      clearable
+    />
+
+    <van-field
+      label="入库数量"
+      name="material_count"
+      type="number"
+      placeholder="请填写入库数量，仅支持数字"
+      value = "{{data.material_count}}"
+      required
+      clearable
+    />
+
+    <van-field
+      label="警戒限"
+      name="warning_line"
+      type="number"
+      placeholder="请设置警戒限"
+      value = "{{data.warning_line}}"
+      required
+      clearable
+    />
+
+    <van-field
+      label="备注"
+      name="comment"
+      type="textarea"
+      autosize
+      border="{{ true }}"
+      value = "{{data.comment}}"
+      clearable
+    />
+
+  </van-cell-group>
+
+  
+
+  <view class="intro-btn">
+    <van-row gutter="20">
+      <van-col span="12"><van-button form-type="submit" plain type="info" round block>保存修改</van-button></van-col>
+      <van-col span="12"><van-button bind:click="onDelete" plain type="warning" round block>删除条目</van-button></van-col>
+    </van-row>
+  </view>
+</form>
+
+<van-toast id="van-toast" />
+  
+
+
+
+
+

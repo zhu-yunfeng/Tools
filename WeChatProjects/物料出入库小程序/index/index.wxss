@@ -1,0 +1,25 @@
+/* miniprogram/pages/index/index.wxss */
+.index-button{
+  margin-right: 50rpx;
+  margin-left: 50rpx;
+  position: relative;
+  top:200px;
+
+}
+
+.container{
+  height: 250px;
+
+}image{
+  position: absolute;
+  z-index: -1;
+}
+
+.page__hd{
+  padding-top: 20px;
+  margin-left: 15px;
+}
+
+.background {
+  justify-content: center
+}

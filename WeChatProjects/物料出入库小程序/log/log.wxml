@@ -1,0 +1,18 @@
+<view class="table">
+  <view class="tr">
+    <view class="th ">操作者</view>
+    <view class="th ">日期</view>        
+    <view class="th ">动作</view>
+    <view class="th ">数量</view>        
+    <view class="th ">物料</view>
+  </view>
+  <block wx:for="{{data}}">
+    <view class="tr {{index % 2 ==0 ?'bg-w':'bg-g'}}"  id="{{item._id}}">
+      <view class="td">{{item.user_name}}</view>
+      <view class="td">{{item.date}}</view>
+      <view class="td">{{item.action}}</view>
+      <view class="td">{{item.material_count}}</view>
+      <view class="td">{{item.material_name}}</view>
+    </view>
+  </block>
+</view>

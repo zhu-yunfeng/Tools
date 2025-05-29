@@ -1,0 +1,60 @@
+<van-notify id="van-notify" />
+<van-toast id="van-toast" />
+
+<van-search
+  shape="round"
+  background="linear-gradient(to right, #FFE53B, #FF2525)"
+  placeholder="请输入搜索关键词，“*”查询所有"
+  bind:change="onChange">
+  <!-- <view slot="action" bind:tap="onClick">搜索</view> -->
+</van-search>
+<view class="table">
+  <view class="tr">
+    <view class="th ">货架号</view>
+    <view class="th ">名称</view>        
+    <view class="th ">数量</view>
+    <view class="th ">入库</view>        
+    <view class="th ">出库</view>
+  </view>
+  <block wx:for="{{data}}">
+    <view class="tr {{index % 2 ==0 ?'bg-w':'bg-g'}}"  id="{{item._id}}">
+      <view class="td">{{item.shelf_idx}}</view>
+      <view class="td">{{item.material_name}}</view>
+      <view class="td">{{item.material_count}}</view>
+      <view class="td"><van-button id="{{item._id}}" color="linear-gradient(to right, #ffc371,#ff5f6d)" round size="small" bind:click="importButton">入库</van-button></view>
+      <view class="td"><van-button id="{{item._id}}" color="linear-gradient(to right, #ff416c, #ff4b2b)" round size="small" bind:click="exportButton">出库</van-button></view>
+    </view>
+  </block>
+</view>
+
+<van-dialog
+  use-slot
+  title="{{targetName}}入库"
+  show="{{ ishow }}"
+  show-cancel-button
+  bind:confirm="materialImport"
+  transition="fade"
+>
+  <van-field class="dialog"
+    placeholder="请输入入库数量"
+    type = "number"
+    name = "icount"
+    bind:input="importCount"
+  />
+</van-dialog>
+
+<van-dialog
+  use-slot
+  title="{{targetName}}出库"
+  show="{{ eshow }}"
+  show-cancel-button
+  bind:confirm="materialExport"
+  transition="fade"
+>
+  <van-field class="dialog"
+    placeholder="请输入出库数量"
+    type = "number"
+    name = "ecount"
+    bind:input="exportCount"
+  />
+</van-dialog>

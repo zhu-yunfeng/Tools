@@ -1,0 +1,50 @@
+.table {
+  border: 0px solid darkgray;
+}
+
+.tr {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  border-bottom: 1rpx solid #f7f8fb;
+  background:linear-gradient(to right, #e52d27,#b31217) ;
+}
+
+.th {
+  width: 25%;
+  height: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-size: 30rpx;
+  font-weight: bold;
+}
+
+.td {
+  width: 25%;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  font-size: 26rpx;
+  color:black;
+  padding: 0.5rem 0 0.5rem 0;
+}
+
+.td2 {
+  width: 25%;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  font-size: 26rpx;
+  color:rgb(255, 0, 0);
+  padding: 0.5rem 0 0.5rem 0;
+}
+
+.bg-w {
+  background:  #FFEFBA;
+}
+
+.bg-g {
+  background:#fcefe8;
+}

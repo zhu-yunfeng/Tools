@@ -1,0 +1,17 @@
+<view class="page__hd"> 欢迎您: {{user_name}}</view>
+<van-divider />
+
+<view class="container">
+  <image src="../../images/user.jpg" class="background" mode="aspectFill"></image>
+  <view class="index-button">
+    <van-button plain round type="danger"  size="large" bind:click="jump_user">我是用户</van-button>
+  </view>
+</view>
+<van-divider />
+<view class="container">
+  <image src="../../images/admin.jpg" class="background" mode="aspectFill"></image>
+  <view class="index-button">
+    <van-button plain color="#000000" round type="default" size="large" bind:click="jump_admin">我是管理员</van-button>
+  </view>
+</view>
+

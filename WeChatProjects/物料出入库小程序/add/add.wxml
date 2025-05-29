@@ -1,0 +1,76 @@
+<view class="page__hd">请在下方输入物料信息：</view>
+<van-divider />
+
+<form bindsubmit="addSubmit">
+  <van-cell-group>
+    <van-field
+      required
+      clearable
+      size='large'
+      label="货架编号"
+      name="shelf_idx"
+      placeholder="请填写货架号"
+      value = "{{clear_info}}"
+    />
+
+    <van-field
+      size='large'
+      label="物料名"
+      name="material_name"
+      placeholder="请填写物料名称"
+      value = "{{clear_info}}"
+      required
+      clearable
+    />
+
+    <van-field
+      size='large'
+      label="入库数量"
+      name="material_count"
+      type="number"
+      placeholder="请填写入库数量，仅支持数字"
+      value = "{{clear_info}}"
+      required
+      clearable
+    />
+
+    <van-field
+      size='large'
+      label="警戒限"
+      name="warning_line"
+      type="number"
+      placeholder="请设置警戒限"
+      value = "{{clear_info}}"
+      required
+      clearable
+    />
+
+    <van-field
+      size='large'
+      label="备注"
+      name="comment"
+      type="textarea"
+      autosize
+      border="{{ true }}"
+      value = "{{clear_info}}"
+      clearable
+    />
+
+  </van-cell-group>
+
+  
+
+  <view class="intro-btn">
+    <van-row gutter="20">
+      <van-col span="12"><van-button form-type="submit" plain type="info" round block>物料入库</van-button></van-col>
+      <van-col span="12"><van-button bind:click="clearButton" plain type="warning" round block>清除输入</van-button></van-col>
+    </van-row>
+  </view>
+</form>
+
+<van-toast id="van-toast" />
+  
+
+
+
+

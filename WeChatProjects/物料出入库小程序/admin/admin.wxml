@@ -1,0 +1,18 @@
+<view class="page__hd"> 欢迎您: {{user_name}}</view>
+<van-divider />
+
+<view class="index-button">
+  <van-button plain round type="info" size="large" bind:click="jump_add">新增物料</van-button>
+</view>
+
+<view class="index-button">
+  <van-button plain round type="primary" size="large" bind:click="jump_change">修改信息</van-button>
+</view>
+
+<view class="index-button">
+  <van-button plain round type="danger" size="large" bind:click="jump_warning">查看警戒</van-button>
+</view>
+
+<view class="index-button">
+  <van-button plain round color='#000000' size="large" bind:click="jump_log">查看日志</van-button>
+</view>

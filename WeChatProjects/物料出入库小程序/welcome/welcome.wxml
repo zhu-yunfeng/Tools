@@ -1,0 +1,11 @@
+<view class="index-title">
+  <view>欢迎使用物料耗材出入库小程序！</view>
+</view>
+
+<view>
+    <image  style="width: 400px; height: 400px;" class="background" src="../../images/login.jpg" mode="aspectFit"></image>
+</view>
+
+<view  class="index-button">
+    <van-button round color="linear-gradient(to right, #FFE53B, #FF2525)" type="warning" size="large" open-type="getUserInfo" bindgetuserinfo='onAuth'>{{button_text}}</van-button>
+</view>
