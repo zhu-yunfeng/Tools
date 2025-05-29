@@ -1,0 +1,19 @@
+<button type="primary" class="sign" style="width: 50vmin;height: 25px;" bindtap="sign">dev. by YFZ</button>
+
+<view >请输入目标浓度(ng/mL)：</view>
+<input type="digit" bindinput="tar_conc" value="{{tar_conc}}"/>
+<view >请输入所需体积(uL)：</view>
+<input type="digit" bindinput="tar_vol" value="{{tar_vol}}"/>
+<view >请输入起始浓度(ng/mL):</view>
+<input type="digit" bindinput="strat_con" value="{{strat_con}}"/>
+<view >请输入最大稀释倍数：</view>
+<input type="digit" bindinput="max_fold" value="{{max_fold}}"/>
+<view >请输入最小取样体积(uL)：</view>
+<input type="digit" bindinput="min_vol" value="{{min_vol}}"/>
+
+<button bindtap="ok" type="primary" size="mini" class="confirm">确认</button>
+<button  type="default" bindtap="reset" size="mini" class="reset">清除</button>
+<text>\n</text>
+<text>{{conclusion}}</text>
+<text>\n</text>
+<text>{{response}}</text>

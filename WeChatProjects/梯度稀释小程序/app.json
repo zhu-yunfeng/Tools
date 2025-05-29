@@ -1,0 +1,15 @@
+{
+  "pages": [
+    "pages/dilution/dilution",
+    "pages/test/test",
+    "pages/test1/test1"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "Dilution Scheme",
+    "navigationBarTextStyle": "black"
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}
